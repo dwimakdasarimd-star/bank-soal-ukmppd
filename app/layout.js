@@ -1,0 +1,1 @@
+export const metadata={title:'Dokter Jaga',description:'Clinical learning platform'};export default function Layout({children}){return <html lang='id'><body>{children}</body></html>}
