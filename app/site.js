@@ -1,0 +1,3 @@
+import Link from 'next/link';
+export function Site({children}){return <><header className="nav"><div className="inner"><Link className="brand" href="/">Dokter Jaga</Link><nav className="navlinks"><Link href="/belajar">Belajar</Link><Link href="/bank-soal">Bank Soal</Link><Link href="/cbt">CBT</Link><Link href="/tools">Tools</Link><Link href="/library">Library</Link><Link href="/ppds">PPDS</Link></nav><Link className="btn primary" href="/dashboard">Dashboard</Link></div></header>{children}<footer className="footer"><div className="container">Dokter Jaga · Clinical learning platform</div></footer></>}
+export function Title({eyebrow,title,text}){return <section className="hero container"><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><p>{text}</p></section>}
