@@ -1,7 +1,0 @@
-import Link from 'next/link';
-
-export function Header(){return <header className="site-header"><div className="container nav-row"><Link href="/" className="brand"><span className="brand-mark">DJ</span><span>Dokter Jaga</span></Link><nav className="desktop-nav"><Link href="/belajar">Belajar</Link><Link href="/bank-soal">Bank Soal</Link><Link href="/cbt">CBT</Link><Link href="/tools">Clinical Tools</Link><Link href="/library">Library</Link><Link href="/ppds">PPDS</Link></nav><div className="nav-actions"><Link href="/dashboard" className="ghost-btn">Dashboard</Link><Link href="/pricing" className="primary-btn">Mulai Gratis</Link></div></div></header>}
-
-export function Shell({children}:{children:React.ReactNode}){return <><Header/>{children}<footer className="footer"><div className="container footer-inner"><div><div className="brand"><span className="brand-mark">DJ</span><span>Dokter Jaga</span></div><p>Clinical learning platform untuk dokter Indonesia.</p></div><div className="footer-links"><div><b>Platform</b><Link href="/bank-soal">Bank Soal</Link><Link href="/cbt">CBT Simulator</Link><Link href="/tools">Clinical Tools</Link></div><div><b>Learning</b><Link href="/library">Library</Link><Link href="/ppds">PPDS Center</Link><Link href="/dashboard">Progress</Link></div></div></div></footer></>}
-
-export function PageHero({eyebrow,title,description}:{eyebrow:string,title:string,description:string}){return <section className="page-hero"><div className="container"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div></section>}
